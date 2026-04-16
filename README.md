@@ -29,11 +29,11 @@ Insurance fraud is a major global issue causing billions in losses annually. Thi
 
 ## 🛠️ Tech Stack
 
-* Programming Language: Python
-* Framework: Django
-* Database: SQLite
-* Frontend: HTML, CSS, Bootstrap
-* IDE: PyCharm / VS Code
+* **Programming Language:** Python
+* **Framework:** Django
+* **Database:** SQLite
+* **Frontend:** HTML, CSS, Bootstrap
+* **IDE:** PyCharm / VS Code
 
 ---
 
@@ -52,11 +52,11 @@ Insurance fraud is a major global issue causing billions in losses annually. Thi
 
 The system follows a structured machine learning workflow:
 
-* Data Collection: Gathering insurance claim data
-* Data Preprocessing: Cleaning and handling missing data
-* Exploratory Data Analysis (EDA): Identifying patterns and anomalies
-* Clustering & Analysis: Grouping data to detect unusual behavior
-* Model Development: Building predictive models for fraud detection 
+* **Data Collection:** Gathering insurance claim data
+* **Data Preprocessing:** Cleaning and handling missing data
+* **Exploratory Data Analysis (EDA):** Identifying patterns and anomalies
+* **Clustering & Analysis:** Grouping data to detect unusual behavior
+* **Model Development:** Building predictive models for fraud detection 
 
 ---
 
@@ -165,7 +165,7 @@ python manage.py runserver
 
 ## 👨‍💻 Author
 
-Yashwanth Gowda T G
+**Yashwanth Gowda T G**
 
 ---
 
