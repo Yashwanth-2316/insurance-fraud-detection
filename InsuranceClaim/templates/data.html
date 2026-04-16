@@ -1,0 +1,145 @@
+{% extends "nav.html" %}
+
+{% block content %}
+
+{% load static %}
+
+
+
+<!-- Footer Starts Here -->
+<footer>
+    <div class="container">
+      <div class="row">
+        
+        
+        <div class="col-md-6 footer-item last-item">
+          <h4>Predict Fraud Insurance Claim</h4>
+          <div class="contact-form">
+            <form id="contact footer-contact" method="post">
+                {% csrf_token %}
+              <div class="row">
+                <div class="col-lg-12">
+                    <fieldset>
+                      <input name="age" placeholder="Age" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="gender" placeholder="Gender" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="education" placeholder="Education" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="occupation" placeholder="Occupation" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="rel" placeholder="Insured Relationship" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="type" placeholder="Incident Type" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="collision" placeholder="Collision Type" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="severity" placeholder="Incident Severity" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="authorities" placeholder="Authorities Contacted" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>    
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="vehicle" placeholder="No of Vehicles Invloved" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="property" placeholder="Property Damage" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="injuries" placeholder="Bodily Injuries" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="witness" placeholder="Witnesses" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="police" placeholder="Police_Report_Avaialable" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="tot_claim" placeholder="Total ClaimAmount" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="injury" placeholder="Injury Claim" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="property_claim" placeholder="Property Claim" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="vehclaim" placeholder="Vehicle Claim" type="text" class="form-control" id="name"  required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="filled-button">Predict</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Copyright &copy; Insurance Claim Fraud Detection 2025
+          
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+{% for i in messages %}
+<script>alert("{{i}}")</script>
+{% endfor %}
+
+{% endblock %}
